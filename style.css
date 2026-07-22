@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f7f9;
+    color: #333;
+}
+
+/* Header Styling */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+}
+
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand-logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #5d2592;
+    text-decoration: none;
+}
+
+.brand-logo span {
+    color: #222;
+}
+
+.location-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #444;
+}
+
+.center-section {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 30px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f6;
+    border-radius: 8px;
+    padding: 8px 14px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-btn {
+    text-decoration: none;
+    background-color: #5d2592;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Layout Wrapper */
+.main-wrapper {
+    max-width: 1400px;
+    margin: 20px auto;
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Sidebar Styles (Spinny Design) */
+.filter-sidebar {
+    width: 280px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #eef0f3;
+    flex-shrink: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+
+.filter-box {
+    padding: 16px 18px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.filter-title-simple {
+    font-size: 13px;
+    font-weight: 700;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+/* Price Range Styling */
+.price-val-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.price-amount {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #5d2592;
+}
+
+.price-label {
+    font-size: 10px;
+    color: #888;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.range-slider-wrapper {
+    margin-top: 6px;
+}
+
+.range-slider {
+    width: 100%;
+    accent-color: #5d2592;
+    cursor: pointer;
+}
+
+/* Search Box in Filter */
+.filter-search-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+
+.filter-search-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 12px;
+}
+
+.filter-search-input i {
+    color: #888;
+    font-size: 12px;
+}
+
+.sub-label {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+/* Checkboxes and Radios */
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.custom-checkbox, .custom-radio {
+    font-size: 12px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.custom-checkbox input, .custom-radio input {
+    accent-color: #5d2592;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.arrow-down {
+    font-size: 10px;
+    color: #5d2592;
+}
+
+.guide-link {
+    font-size: 11px;
+    color: #5d2592;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Color Swatches Grid */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.color-swatch {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: inset 0 0 2px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease-in-out;
+}
+
+.color-swatch:hover {
+    transform: scale(1.08);
+}
+
+.white-swatch {
+    border: 1px solid #ddd;
+}
+
+/* Accordion Line Items */
+.accordion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    cursor: pointer;
+}
+
+/* Content Main Area */
+.content-area {
+    flex: 1;
+}
+
+.listing-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.listing-heading h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.car-count {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Sorting Bar */
+.sort-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #eef0f3;
+}
+
+.sort-label {
+    font-size: 12px;
+    color: #777;
+    font-weight: 600;
+}
+
+.sort-options {
+    display: flex;
+    gap: 8px;
+}
+
+.sort-btn {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #444;
+}
+
+.sort-btn.active {
+    border-color: #5d2592;
+    color: #5d2592;
+    font-weight: 600;
+    background-color: #f7f0fc;
+}
+
+/* Car Cards Grid */
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #eef0f3;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.car-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card-image-box {
+    position: relative;
+    height: 180px;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.assured-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+}
+
+.wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    color: #555;
+}
+
+.card-details {
+    padding: 14px;
+}
+
+.year-make {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+}
+
+.variant {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.car-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.car-tags span {
+    background: #f1f3f6;
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: #555;
+}
+
+.price-container {
+    border-top: 1px dashed #eee;
+    padding-top: 10px;
+}
+
+.main-price {
+    font-size: 16px;
+    font-weight: 800;
+    color: #222;
+}
+
+.emi-text {
+    font-size: 10px;
+    color: #27ae60;
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.card-footer {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #888;
+}
+
+    

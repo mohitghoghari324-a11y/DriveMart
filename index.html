@@ -1,2 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Used Cars in Delhi NCR | DriveMart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
+    <!-- Header / Top Bar -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="left-section">
+                <a href="#" class="brand-logo">Drive<span>Mart</span></a>
+                <div class="location-selector">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Delhi NCR</span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+            </div>
 
+            <div class="center-section">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" placeholder="Search by make, model, or body type (e.g. Swift, SUV)">
+                </div>
+            </div>
+
+            <div class="right-section">
+                <a href="#" class="nav-item">Buy Car</a>
+                <a href="#" class="nav-item">Sell Car</a>
+                <a href="#" class="nav-item"><i class="fa-regular fa-heart"></i> Shortlisted</a>
+                <a href="#" class="login-btn"><i class="fa-regular fa-user"></i> Account</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Body -->
+    <div class="main-wrapper">
+        
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+            
+            <!-- 1. Price Range -->
+            <div class="filter-box">
+                <div class="filter-title-simple">Price Range</div>
+                <div class="price-val-container">
+                    <div class="price-val-box">
+                        <span class="price-amount">₹ 50,000</span>
+                        <span class="price-label">Minimum</span>
+                    </div>
+                    <div class="price-val-box text-right">
+                        <span class="price-amount">₹ 70,00,000</span>
+                        <span class="price-label">Maximum</span>
+                    </div>
+                </div>
+                <div class="range-slider-wrapper">
+                    <input type="range" min="50000" max="7000000" value="7000000" class="range-slider">
+                </div>
+            </div>
+
+            <!-- 2. Brands + Models -->
+            <div class="filter-box">
+                <div class="filter-title-simple">Brands + Models</div>
+                <div class="filter-search-input">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="sub-label">Top Brands</div>
+                <div class="filter-options">
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Maruti Suzuki</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Hyundai</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Tata</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Honda</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Kia</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Mahindra</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 3. Year -->
+            <div class="filter-box">
+                <div class="filter-title-simple">Year</div>
+                <div class="filter-options">
+                    <label class="custom-radio"><input type="radio" name="year"> 2024 & above</label>
+                    <label class="custom-radio"><input type="radio" name="year"> 2022 & above</label>
+                    <label class="custom-radio"><input type="radio" name="year"> 2020 & above</label>
+                    <label class="custom-radio"><input type="radio" name="year"> 2018 & above</label>
+                    <label class="custom-radio"><input type="radio" name="year"> 2016 & above</label>
+                    <label class="custom-radio"><input type="radio" name="year"> 2014 & above</label>
+                    <label class="custom-radio"><input type="radio" name="year"> 2012 & above</label>
+                    <label class="custom-radio"><input type="radio" name="year"> 2010 & above</label>
+                </div>
+            </div>
+
+            <!-- 4. Kms Driven -->
+            <div class="filter-box">
+                <div class="filter-title-simple">Kms Driven</div>
+                <div class="filter-options">
+                    <label class="custom-radio"><input type="radio" name="kms"> 10,000 kms or less</label>
+                    <label class="custom-radio"><input type="radio" name="kms"> 30,000 kms or less</label>
+                    <label class="custom-radio"><input type="radio" name="kms"> 50,000 kms or less</label>
+                    <label class="custom-radio"><input type="radio" name="kms"> 75,000 kms or less</label>
+                    <label class="custom-radio"><input type="radio" name="kms"> 1,00,000 kms or less</label>
+                    <label class="custom-radio"><input type="radio" name="kms"> 1,25,000 kms or less</label>
+                    <label class="custom-radio"><input type="radio" name="kms"> 1,50,000 kms or less</label>
+                </div>
+            </div>
+
+            <!-- 5. Fuel Type -->
+            <div class="filter-box">
+                <div class="filter-title-simple">Fuel Type</div>
+                <div class="filter-options">
+                    <label class="custom-checkbox"><input type="checkbox"> Petrol</label>
+                    <label class="custom-checkbox"><input type="checkbox"> Diesel</label>
+                    <label class="custom-checkbox"><input type="checkbox"> CNG</label>
+                    <label class="custom-checkbox"><input type="checkbox"> Electric</label>
+                    <label class="custom-checkbox"><input type="checkbox"> Hybrid</label>
+                </div>
+            </div>
+
+            <!-- 6. Body Type -->
+            <div class="filter-box">
+                <div class="filter-title-simple">Body Type</div>
+                <div class="filter-options">
+                    <label class="custom-checkbox"><input type="checkbox"> Hatchback</label>
+                    <label class="custom-checkbox"><input type="checkbox"> Sedan</label>
+                    <label class="custom-checkbox"><input type="checkbox"> SUV</label>
+                    <label class="custom-checkbox"><input type="checkbox"> MUV</label>
+                </div>
+            </div>
+
+            <!-- 7. Transmission -->
+            <div class="filter-box">
+                <div class="filter-title-simple flex-between">
+                    <span>Transmission</span>
+                    <a href="#" class="guide-link">Guide <i class="fa-solid fa-circle-info"></i></a>
+                </div>
+                <div class="filter-options">
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Automatic</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                    <label class="custom-checkbox flex-between">
+                        <span class="box-label"><input type="checkbox"> Manual</span>
+                        <i class="fa-solid fa-chevron-down arrow-down"></i>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 8. Car Category -->
+            <div class="accordion-item">
+                <span>Car Category</span>
+                <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </div>
+
+            <!-- 9. Color -->
+            <div class="filter-box">
+                <div class="filter-title-simple">Color</div>
+                <div class="color-palette">
+                    <span class="color-swatch" style="background-color: #FFFF00;"></span>
+                    <span class="color-swatch" style="background-color: #D30000;"></span>
+                    <span class="color-swatch" style="background-color: #D2B48C;"></span>
+                    <span class="color-swatch" style="background-color: #8E2DE2;"></span>
+                    <span class="color-swatch white-swatch" style="background-color: #FFFFFF;"></span>
+                    <span class="color-swatch" style="background-color: #D3D3D3;"></span>
+                    <span class="color-swatch" style="background-color: #808080;"></span>
+                    <span class="color-swatch" style="background-color: #000000;"></span>
+                    <span class="color-swatch" style="background-color: #1E88E5;"></span>
+                    <span class="color-swatch" style="background-color: #2E7D32;"></span>
+                    <span class="color-swatch" style="background-color: #FF6F00;"></span>
+                </div>
+            </div>
+
+            <!-- Accordion Items -->
+            <div class="accordion-item">
+                <span>Safety & Features</span>
+                <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </div>
+            <div class="accordion-item">
+                <span>Seats</span>
+                <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </div>
+            <div class="accordion-item">
+                <span>RTO</span>
+                <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </div>
+            <div class="accordion-item">
+                <span>Owner</span>
+                <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </div>
+            <div class="accordion-item">
+                <span>Spinny Hubs</span>
+                <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </div>
+
+        </aside>
+
+        <!-- Right Side: Cars Section -->
+        <main class="content-area">
+            
+            <!-- Breadcrumbs and Header -->
+            <div class="listing-heading">
+                <h1>Used Cars in Delhi NCR</h1>
+                <span class="car-count">1,240 Assured Cars</span>
+            </div>
+
+            <!-- Sorting Bar -->
+            <div class="sort-bar">
+                <span class="sort-label">Sort By:</span>
+                <div class="sort-options">
+                    <button class="sort-btn active">Relevance</button>
+                    <button class="sort-btn">Price: Low to High</button>
+                    <button class="sort-btn">Price: High to Low</button>
+                    <button class="sort-btn">Kms Driven</button>
+                    <button class="sort-btn">Year</button>
+                </div>
+            </div>
+
+            <!-- Car Cards Grid Layout (25 Cars) -->
+            <div class="cars-grid">
+
+                <!-- Car Card 1 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80" alt="Hyundai i20">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2020 Hyundai i20</div>
+                        <div class="variant">Sportz 1.2 MT</div>
+                        <div class="car-tags">
+                            <span>34,500 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹6,45,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹11,200/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Rohini, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80" alt="Maruti Swift">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2019 Maruti Swift</div>
+                        <div class="variant">VXI Manual</div>
+                        <div class="car-tags">
+                            <span>42,100 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹5,20,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹9,100/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Honda City">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2021 Honda City</div>
+                        <div class="variant">ZX CVT Automatic</div>
+                        <div class="car-tags">
+                            <span>18,000 km</span>
+                            <span>Petrol</span>
+                            <span>Automatic</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹11,85,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹20,500/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Noida</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 4 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Tata Nexon">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2022 Tata Nexon</div>
+                        <div class="variant">XZ Plus Petrol</div>
+                        <div class="car-tags">
+                            <span>22,400 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹8,90,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹15,400/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Dwarka, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 5 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Mahindra Thar">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2020 Mahindra Thar</div>
+                        <div class="variant">LX Hard Top Petrol MT</div>
+                        <div class="car-tags">
+                            <span>29,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹12,50,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹21,800/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Faridabad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 6 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" alt="Maruti Baleno">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2018 Maruti Baleno</div>
+                        <div class="variant">Zeta 1.2 Petrol</div>
+                        <div class="car-tags">
+                            <span>51,200 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>2nd Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹5,10,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹8,900/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Ghaziabad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 7 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=600&q=80" alt="Kia Seltos">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2021 Kia Seltos</div>
+                        <div class="variant">HTX 1.5 Petrol</div>
+                        <div class="car-tags">
+                            <span>31,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹11,20,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹19,400/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: South Ext, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 8 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="Hyundai Creta">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2019 Hyundai Creta</div>
+                        <div class="variant">1.6 SX Petrol</div>
+                        <div class="car-tags">
+                            <span>45,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹9,45,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹16,500/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 9 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=600&q=80" alt="Tata Punch">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2022 Tata Punch</div>
+                        <div class="variant">Creative Flagship MT</div>
+                        <div class="car-tags">
+                            <span>12,500 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹7,15,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹12,400/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Noida</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 10 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=600&q=80" alt="Honda Amaze">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2017 Honda Amaze</div>
+                        <div class="variant">1.2 VX Petrol</div>
+                        <div class="car-tags">
+                            <span>58,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>2nd Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹4,25,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹7,400/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: West Patel Nagar, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 11 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=600&q=80" alt="Renault Kwid">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2020 Renault Kwid</div>
+                        <div class="variant">RXT 1.0</div>
+                        <div class="car-tags">
+                            <span>26,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹3,15,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹5,500/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Faridabad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 12 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=600&q=80" alt="Maruti Brezza">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2021 Maruti Brezza</div>
+                        <div class="variant">ZXI Petrol</div>
+                        <div class="car-tags">
+                            <span>38,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹8,40,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹14,600/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 13 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=600&q=80" alt="Toyota Fortuner">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2019 Toyota Fortuner</div>
+                        <div class="variant">2.8 4x2 AT Diesel</div>
+                        <div class="car-tags">
+                            <span>64,000 km</span>
+                            <span>Diesel</span>
+                            <span>Automatic</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹27,50,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹47,800/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Vasant Kunj, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 14 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80" alt="Hyundai Venue">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2022 Hyundai Venue</div>
+                        <div class="variant">SX 1.2 Petrol</div>
+                        <div class="car-tags">
+                            <span>15,800 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹8,75,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹15,200/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Ghaziabad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 15 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="MG Hector">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2020 MG Hector</div>
+                        <div class="variant">Sharp 1.5 DCT</div>
+                        <div class="car-tags">
+                            <span>36,000 km</span>
+                            <span>Petrol</span>
+                            <span>Automatic</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹13,20,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹22,900/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Noida</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 16 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=600&q=80" alt="Tata Tiago">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2018 Tata Tiago</div>
+                        <div class="variant">XZ Petrol</div>
+                        <div class="car-tags">
+                            <span>48,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>2nd Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹4,10,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹7,100/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Janakpuri, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 17 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Maruti Ertiga">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2021 Maruti Ertiga</div>
+                        <div class="variant">ZXI Petrol</div>
+                        <div class="car-tags">
+                            <span>33,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹9,60,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹16,700/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 18 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80" alt="Volkswagen Polo">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2019 Volkswagen Polo</div>
+                        <div class="variant">1.2 MPI Highline</div>
+                        <div class="car-tags">
+                            <span>41,500 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹5,30,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹9,200/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Faridabad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 19 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=600&q=80" alt="Kia Sonet">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2022 Kia Sonet</div>
+                        <div class="variant">HTX 1.0 Turbo iMT</div>
+                        <div class="car-tags">
+                            <span>19,200 km</span>
+                            <span>Petrol</span>
+                            <span>Automatic</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹9,80,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹17,000/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Noida</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 20 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Mahindra XUV500">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2020 Mahindra XUV500</div>
+                        <div class="variant">W11 Option Diesel</div>
+                        <div class="car-tags">
+                            <span>52,000 km</span>
+                            <span>Diesel</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹12,80,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹22,300/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Lajpat Nagar, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 21 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600&q=80" alt="Skoda Rapid">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2021 Skoda Rapid</div>
+                        <div class="variant">1.0 TSI Rider</div>
+                        <div class="car-tags">
+                            <span>27,400 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹6,90,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹12,000/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 22 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=600&q=80" alt="Maruti Wagon R">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2018 Maruti Wagon R</div>
+                        <div class="variant">VXI 1.2</div>
+                        <div class="car-tags">
+                            <span>43,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹3,85,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹6,700/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Ghaziabad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 23 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80" alt="Tata Harrier">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2022 Tata Harrier</div>
+                        <div class="variant">XZ Plus Dark Edition</div>
+                        <div class="car-tags">
+                            <span>21,000 km</span>
+                            <span>Diesel</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹16,90,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹29,400/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Noida</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 24 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=600&q=80" alt="Hyundai Nios">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2019 Hyundai Grand i10</div>
+                        <div class="variant">Nios Magna 1.2</div>
+                        <div class="car-tags">
+                            <span>39,000 km</span>
+                            <span>Petrol</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹4,80,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹8,300/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Pitampura, Delhi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Card 25 -->
+                <div class="car-card">
+                    <div class="card-image-box">
+                        <span class="assured-tag"><i class="fa-solid fa-shield-halved"></i> DriveMart Assured</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Jeep Compass">
+                    </div>
+                    <div class="card-details">
+                        <div class="year-make">2021 Jeep Compass</div>
+                        <div class="variant">Limited 2.0 Diesel</div>
+                        <div class="car-tags">
+                            <span>35,000 km</span>
+                            <span>Diesel</span>
+                            <span>Manual</span>
+                            <span>1st Owner</span>
+                        </div>
+                        <div class="price-container">
+                            <div class="main-price">₹17,50,000</div>
+                            <div class="emi-text">Zero Downpayment | EMI ₹30,500/mo</div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="hub-location"><i class="fa-solid fa-location-dot"></i> Hub: Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main> 
+    </div>
+
+    
+</body>
+</html>
